@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: 'MyFont';
-    src: url('MyFont.woff2') format('woff2'), 
-         url('MyFont.woff') format('woff'); 
+    src: url('../fonts/Шрифт\ Stratos.zip') format('woff2'), 
+         url('') format('woff'); 
     font-weight: normal; 
     font-style: normal; 
 }
