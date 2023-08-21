@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('MyFont.woff2') format('woff2'), 
+         url('MyFont.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body {
+    font-family: 'MyFont', sans-serif;
+}
+
 .main {
     background: #004980;
     height: 100vh;
@@ -19,6 +31,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 12px;
 }
 
 .choise__title {
@@ -28,25 +41,6 @@
     display: flex;
     text-align: center;
     padding-top: 52px;
-}
-
-.choise__level {
-    display: flex;
-    flex-direction: row;
-    padding-top: 48px;
-    color: #0080C1;
-    gap: 25px;
-}
-
-.level {
-    background: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 64px;
-    border-radius: 12px;
 }
 
 .choise__button {
@@ -61,4 +55,38 @@
     height: 50px;
     width: 246px;
     font-size: 24px;
+}
+
+.radio-toolbar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+    color: #0080C1;
+    gap: 25px;
+    transition: all .3s;
+}
+
+.radio-toolbar label {
+    background: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    border-radius: 12px;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: #0049801b;
+    border: 1px solid #0080C1;
+}
+
+.radio-toolbar label:hover {
+    background-color: #0049801b;
+    border: 1px solid #0080C1;
 }
