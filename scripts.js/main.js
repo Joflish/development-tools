@@ -1,15 +1,20 @@
-const difficultyLevelOne = document.getElementById('radio1');
-const difficultyLevelTwo = document.getElementById('radio2');
-const difficultyLevelThree = document.getElementById('radio3');
+const difficultyLevels = [
+document.getElementById('radio1'),
+document.getElementById('radio2'),
+document.getElementById('radio3'),
+];
+const buttonStart = document.getElementById('start-button');
 
-difficultyLevelOne.addEventListener("click", () => {
-    console.log('Вы выбрали легкий уровень');
+let selectedDifficultyLevel;
+
+difficultyLevels.forEach((level, index) => {
+level.addEventListener("click", () => {
+    selectedDifficultyLevel = index + 1;
+});
 });
 
-difficultyLevelTwo.addEventListener("click", () => {
-    console.log('Вы выбрали средний уровень');
-})
+buttonStart.addEventListener("click", () => {
+    console.log(selectedDifficultyLevel);
+});
 
-difficultyLevelThree.addEventListener("click", () => {
-    console.log('Вы выбрали сложный уровень');
-})
+
