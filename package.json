@@ -1,0 +1,26 @@
+{
+  "name": "development-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ./src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joflish/development-tools.git"
+  },
+  "author": "Matvei Pyaterikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joflish/development-tools/issues"
+  },
+  "homepage": "https://github.com/Joflish/development-tools#readme",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-prettier": "^0.0.0-empty",
+    "prettier": "^3.0.2"
+  }
+}
