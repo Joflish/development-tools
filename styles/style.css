@@ -1,18 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
+.center {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.timer-block {
+    position: relative;
+}
+
+.timer-values {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: flex;
+    gap: 70px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 40px;
 }
 
 @font-face {
-    font-family: 'MyFont';
-    src: url('../fonts/MyFont.woff2') format('woff2'), 
-         url('../fonts/MyFont.woff') format('woff'); 
-    font-weight: normal; 
-    font-style: normal; 
+    font-family: MyFont;
+    src:
+        url("../fonts/MyFont.woff2") format("woff2"),
+        url("../fonts/MyFont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    font-family: 'MyFont', sans-serif;
+    font-family: MyFont, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -24,8 +43,8 @@ body {
     align-items: center;
 }
 
-.main__choise {
-    background: #C2F5FF;
+.main-choise {
+    background: #c2f5ff;
     height: 460px;
     width: 480px;
     display: flex;
@@ -34,22 +53,21 @@ body {
     border-radius: 12px;
 }
 
-.choise__title {
+.choise-title {
     color: #004980;
     font-size: 40px;
     width: 208px;
     display: flex;
     text-align: center;
-    padding-top: 52px;
 }
 
-.choise__button {
+.choise-button {
     padding-top: 67px;
 }
 
-.start__button {
-    background: #7AC100;
-    color: #ffffff;
+.start-button {
+    background: #7ac100;
+    color: #fff;
     border: none;
     border-radius: 12px;
     height: 50px;
@@ -60,14 +78,13 @@ body {
 .radio-toolbar {
     display: flex;
     flex-direction: row;
-    padding-top: 48px;
-    color: #0080C1;
+    color: #0080c1;
     gap: 25px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .radio-toolbar label {
-    background: rgb(255, 255, 255);
+    background: #fff;
     width: 100px;
     height: 100px;
     display: flex;
@@ -81,12 +98,42 @@ body {
     display: none;
 }
 
-.radio-toolbar input[type="radio"]:checked+label {
-    background-color: #0049801b;
-    border: 1px solid #0080C1;
-}
-
 .radio-toolbar label:hover {
     background-color: #0049801b;
-    border: 1px solid #0080C1;
+    border: 1px solid #0080c1;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #0049801b;
+    border: 1px solid #0080c1;
+}
+
+/* страница с перевернутыми картами */
+
+.main-timer-block {
+    background: #004980;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-block-timer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 46px;
+}
+
+#timer {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #fff;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
 }

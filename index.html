@@ -1,35 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>playing cards</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <div id="main" class="main">
-        <div class="main__choise">
-            <div class="choise__title">
-                <p>Выбери сложность</p>
-            </div>
-            <div class="radio-toolbar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>playing cards</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div id="main" class="main center">
+            <div class="main-choise">
+                <div class="choise-title">
+                    <p>Выбери сложность</p>
+                </div>
+                <div class="radio-toolbar">
+                    <input type="radio" id="radio1" name="radios" />
+                    <label for="radio1">1</label>
 
-                <input type="radio" id="radio1" name="radios">
-                <label for="radio1">1</label>
-                
-                <input type="radio" id="radio2" name="radios">
-                <label for="radio2">2</label>
-                
-                <input type="radio" id="radio3" name="radios">
-                <label for="radio3">3</label>
+                    <input type="radio" id="radio2" name="radios" />
+                    <label for="radio2">2</label>
 
-            </div>
-            <div class="choise__button">
-                <button id="start-button" class="start__button" type="button">Старт</button>
+                    <input type="radio" id="radio3" name="radios" />
+                    <label for="radio3">3</label>
+                </div>
+                <div class="choise-button">
+                    <button
+                        id="start-button"
+                        class="start-button"
+                        type="button"
+                    >
+                        Старт
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script type="module" src="./scripts.js/main.js"></script>
-</body>
+        <script type="module" src="./scripts.js/main.js"></script>
+    </body>
 </html>
