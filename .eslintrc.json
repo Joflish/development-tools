@@ -4,15 +4,13 @@
         "es6": true,
         "node": true
     },
-    "extends": ["eslint:recommended", "prettier", "stylelint-config-standard",
-    "stylelint-prettier/recommended",
-    "stylelint-disable-next-line prettier/prettier"],
+    "extends": ["eslint:recommended", "prettier"],
     "plugins": ["prettier"],
     "parserOptions": {
         "ecmaVersion": 2020
     },
     "rules": {
-        "prettier/prettier": ["true"],
+        "prettier/prettier": ["off"],
         "camelcase": "error",
         "eqeqeq": ["error", "always"]
     }
